@@ -1,3 +1,20 @@
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# alias
+alias top='htop'
+alias cat='bat'
+alias mip='curl ipinfo.io'
+alias proxy='export https_proxy=http://127.0.0.1:7890; export http_proxy=http://127.0.0.1:7890'
+alias unproxy='unset http_proxy;unset https_proxy'
+
 # keybinding
 bindkey 'jk' vi-cmd-mode
 
