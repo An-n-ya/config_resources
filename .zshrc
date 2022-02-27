@@ -14,6 +14,8 @@ alias cat='bat'
 alias mip='curl ipinfo.io'
 alias proxy='export https_proxy=http://127.0.0.1:7890; export http_proxy=http://127.0.0.1:7890'
 alias unproxy='unset http_proxy;unset https_proxy'
+alias vi='nvim'
+alias vim='nvim'
 
 # keybinding
 bindkey 'jk' vi-cmd-mode
